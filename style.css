@@ -1,0 +1,78 @@
+/* Universal tags */
+body {
+  background-color: #f6f9fc;
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+}
+
+/* Canvas  */
+#canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px #b5b5b5;
+}
+
+/* Controls  */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#range {
+  margin-top: 35px;
+}
+
+.btns {
+  margin: 25px;
+}
+
+.btns button {
+  all: unset;
+  cursor: pointer;
+  background-color: white;
+  padding: 5px 10px;
+  width: 50px;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin: 0 3px;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btns button:active {
+  transform: scale(0.9);
+}
+
+.colors {
+  display: flex;
+  gap: 5px;
+}
+
+.color {
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Mobile and Tablet  */
+@media only screen and (max-width: 750px) {
+  #canvas {
+    width: 400px;
+    height: 400px;
+  }
+
+  .color {
+    width: 35px;
+    height: 35px;
+  }
+}
